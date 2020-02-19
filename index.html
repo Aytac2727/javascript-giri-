@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <img id="photo" width="50%" src="photo/dingo.png" alt="">
+    <br>
+    <input type="button" id="before" value="first photo">
+    <input type="button" id="after" value="second photo">
+
+    <script>
+        var photo = document.getElementById("photo")
+
+        var btn1 = document.getElementById("after")
+        var btn2 = document.getElementById("before")
+
+        btn1.onclick = function() {
+            photo.src = "photo/dingo.png"
+        }
+
+        btn2.onclick = function() {
+            photo.src = "photo/simpson.png"
+        }
+    </script>
+</body>
+</html>
+
+
